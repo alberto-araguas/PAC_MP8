@@ -3,4 +3,7 @@
     <string name="boton_1">Activity 2</string>
     <string name="boton_2">Activity 3</string>
     <string name="boton_3">Activity 4</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
