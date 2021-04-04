@@ -15,7 +15,7 @@ class splashactivity : AppCompatActivity() {
         setContentView(R.layout.splashactivity)
               loadSplashScreen()
     }
-    private var TIME_OUT:Long = 4000
+    private var TIME_OUT:Long = 2000
 
     private fun loadSplashScreen(){
         Handler().postDelayed({

@@ -6,6 +6,8 @@
     <string name="title_activity_splash">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="Act3volver"> Volver </string>
-    <string name="Act3_activar_camara"> Activar camara </string>
+    <string name="Act3_activar_camara"> Tomar Foto </string>
+    <string name="imagenfoto">imgenfoto</string>
+    <string name="imagencamara">IMAGENCAMARA</string>
 
 </resources>
