@@ -27,6 +27,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/iwHor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/image1" />
+                <ImageView
+                    android:id="@+id/iwHor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/image2" />
+                <ImageView
+                    android:id="@+id/iwHor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/image3" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:id="@+id/iwHor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/image4" />
+
+                <ImageView
+                    android:id="@+id/iwHor5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/images5" />
+                <ImageView
+                    android:id="@+id/iwHor6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/image6" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+        <!--
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,39 +85,40 @@
 
             <ImageView
                 android:id="@+id/iwHor1"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/image1" />
             <ImageView
                 android:id="@+id/iwHor2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 app:srcCompat="@drawable/image2" />
             <ImageView
                 android:id="@+id/iwHor3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/image3" />
 
             <ImageView
                 android:id="@+id/iwHor4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 app:srcCompat="@drawable/image4" />
 
             <ImageView
                 android:id="@+id/iwHor5"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/images5" />
             <ImageView
                 android:id="@+id/iwHor6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 app:srcCompat="@drawable/image6" />
         </LinearLayout>
+        -->
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
