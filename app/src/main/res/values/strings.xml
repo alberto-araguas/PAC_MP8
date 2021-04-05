@@ -9,5 +9,6 @@
     <string name="Act3_activar_camara"> Tomar Foto </string>
     <string name="imagenfoto">imgenfoto</string>
     <string name="imagencamara">IMAGENCAMARA</string>
+    <string name="volverAct4">Volver</string>
 
 </resources>
