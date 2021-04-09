@@ -1,7 +1,5 @@
 package com.araguas.pac_mp8
 
-
-
 import android.content.ContentValues
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
@@ -16,11 +14,12 @@ class Activity_2 : AppCompatActivity() {
         setContentView(R.layout.activity_2)
 
         btnTabla.setOnClickListener{
+            //llamamos a la función para insertar una tabla en la base de datos
             crearTabla()
-
         }
 
         btnInsertar.setOnClickListener{
+            //con db.insert hacemos el SQL INSERT, se realiza sobre la tabla PERSONAS
             val admin = AdminSQLiteOpenHelper(this,"administracion", null, 1)
             val bd = admin.writableDatabase
             val registro = ContentValues()
@@ -36,6 +35,7 @@ class Activity_2 : AppCompatActivity() {
         }
 
         btnConsultar.setOnClickListener{
+            //realizamos la SQL query, usamos la tabla PERSONAS, pero se podria usar cualquier tabla
             try {
                 val admin = AdminSQLiteOpenHelper(this, "administracion", null, 1)
                 val bd = admin.writableDatabase
@@ -52,6 +52,7 @@ class Activity_2 : AppCompatActivity() {
         }
 
         btnVoverAct1.setOnClickListener{
+            //volvemos a la activity 1
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -63,15 +64,15 @@ class Activity_2 : AppCompatActivity() {
     }
 
     fun crearTabla(){
-        //lanzamos el comando SQL que crea la tabla
+        //lanzamos el comando SQL que crea la tabla, esta tabla la he llamado OTRATABLA, como no se indica cada,
+        // la tabla por defecto para leer y guardar registros es la tabla que se ha creado desde la función onCreate, es
+        //decir la tabla PERSONAS.
+        // se puede añadir la logica necesaria para trabajar con varias tablas
         val admin = AdminSQLiteOpenHelper(this, "administracion", null, 1)
         val bd = admin.writableDatabase
-        val tabla = bd.rawQuery("CREATE TABLE personas(dni String primary key, nombre String, correo String)", null)
+         bd.execSQL("CREATE TABLE otratabla(dni String primary key, nombre String, correo String)")
+        Toast.makeText(this, "tabla creada con exito ", Toast.LENGTH_SHORT).show()
     }
-
-
-
-
 
 
 }

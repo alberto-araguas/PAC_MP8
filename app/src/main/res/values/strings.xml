@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">PAC_MP8</string>
-    <string name="boton_1">Base Datos</string>
-    <string name="boton_2">Camara</string>
-    <string name="boton_3">Imagenes</string>
+    <string name="boton_1">Activity 2</string>
+    <string name="boton_2">Activity 3</string>
+    <string name="boton_3">Activity 4</string>
     <string name="title_activity_splash">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="Act3volver"> Volver </string>
