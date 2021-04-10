@@ -23,10 +23,10 @@ class Activity_2 : AppCompatActivity() {
             val admin = AdminSQLiteOpenHelper(this,"administracion", null, 1)
             val bd = admin.writableDatabase
             val registro = ContentValues()
-            registro.put("dni", etDni.getText().toString())
+            registro.put("num", etDni.getText().toString())
             registro.put("nombre", etNombre.getText().toString())
             registro.put("correo", etCorreo.getText().toString())
-            bd.insert("personas", null, registro)
+            bd.insert("empleados", null, registro)
             bd.close()
             etDni.setText("")
             etNombre.setText("")
@@ -39,7 +39,7 @@ class Activity_2 : AppCompatActivity() {
             try {
                 val admin = AdminSQLiteOpenHelper(this, "administracion", null, 1)
                 val bd = admin.writableDatabase
-                val fila = bd.rawQuery("select nombre, correo from personas where dni=${etDni.text}", null)
+                val fila = bd.rawQuery("select nombre, correo from empleados where num=${etDni.text}", null)
                 if (fila.moveToFirst()) {
                     etNombre.setText(fila.getString(0))
                     etCorreo.setText(fila.getString(1))
@@ -70,7 +70,7 @@ class Activity_2 : AppCompatActivity() {
         // se puede añadir la logica necesaria para trabajar con varias tablas
         val admin = AdminSQLiteOpenHelper(this, "administracion", null, 1)
         val bd = admin.writableDatabase
-         bd.execSQL("CREATE TABLE otratabla(dni String primary key, nombre String, correo String)")
+         bd.execSQL("CREATE TABLE tabla2(dni String primary key, nombre String, apellido String)")
         Toast.makeText(this, "tabla creada con exito ", Toast.LENGTH_SHORT).show()
     }
 
